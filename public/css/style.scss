@@ -1,0 +1,39 @@
+@import "mixins.scss";
+@import "colors.scss";
+@import "global.scss";
+
+.container {
+  @include flex(column);
+  padding: 1em;
+}
+
+.layout {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.links {
+	width: 12.5vw;
+}
+
+.recent {
+	min-width: 25em;
+	max-width: 50em;
+}
+
+.recent span {
+	margin-bottom: 1em;
+}
+
+.recent {
+	&__item {
+		margin-bottom: 1em;
+		&__guid {
+			display: block;
+			margin-bottom: 1em;
+		}
+		&__image {
+			max-width: 30em;
+		}
+	}
+}
